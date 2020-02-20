@@ -1,0 +1,83 @@
+.details_style{
+  width:1200px;
+  height:100px;
+  background-image:url(../image/ahaPanelBg.jpg);
+  margin:0 auto;
+  overflow:hidden;
+  position:relative;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.details_style>ul{
+  display:flex;
+}
+.details_style>ul>li{
+  list-style:none;
+  padding-left:30px;
+}
+.details_style>ul>li>a{
+  font-size:14px;
+  color:#000;
+}
+.details_style>ul>li>a:hover{
+  color:#ff4001;
+}
+
+.fenye{
+  width:570px;
+  height:50px;
+  margin-left:975px;
+  text-align: center;
+  line-height: 50px;
+}
+.details{
+  width:1200px;
+  height:800px;
+  margin:0 auto;
+  margin-top:10px;
+  background:#fff;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  padding-top:10px;
+}
+.details>div{
+  width:285px;
+  height:390px;
+  text-align: center;
+}
+.details>div:hover{
+  background:#feb5ac;
+  transition:all .8s ease-in-out;
+}
+.btn{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../image/ahaPanelBg.jpg);
+  background-size: 100%;
+}
+.btn>li{
+  width:80px;
+  height:50px;
+  border:2px solid lightseagreen;
+}
+.btn>li{
+  color:#ff4001;
+  font-size:20px;
+}
+.btn>li:first-child{
+  border-radius:5px 0 0 5px;
+}
+.btn>li:last-child{
+  border-radius:0 5px 5px 0;
+}
+.btn>li+li{
+  border-left:0;
+}
+.fenye>.btn>li:hover{
+  cursor:pointer;
+  background:lightsalmon;
+}

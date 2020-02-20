@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="  css/public.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;padding:0;
+    }
+    .header{
+      width:1200px;
+      height:90px;
+      margin:0 auto;
+      line-height:90px;
+    }
+    .banner{
+      width:1920px;
+      height:520px;
+    }
+    .img_1{
+      background-image:url("  image/timg.jpg");
+      width:1920px;
+      height:520px;
+      background-size:100%;
+      background-repeat: no-repeat;
+    }
+    .header>p{
+      float:right;
+    }
+    .header>p>a{
+      font-size: 10px;
+      color:#fe4320;
+    }
+    .header>span{
+      font-size:1.2rem;
+    }
+    .reg{
+      width:250px;
+      height:339px;
+      background:#fff;
+      float:right;
+      margin-top:50px;
+      margin-right:-130px;
+      padding:35px 60px;
+    }
+    .form>div>input{
+      height:30px;
+      width:230px;
+      border:0;
+      border-bottom:1px solid #000;
+      margin-top:20px;
+      margin-left:20px;
+    }
+    .parent{
+      position:relative;
+    }
+    .parent>img{
+      position:absolute;
+      top:30px;
+    }
+    .form>button{
+      width:250px;
+      height:50px;
+      margin-top:20px;
+      margin-bottom:20px;
+      background:#fe4320;
+      border:0;
+      font-size:1rem;
+      color:#fff;
+    }
+    .reg>label{
+      font-size:10px;
+    }
+    .reg>label>a{
+      color:#fe4320;
+      font-size:8px;
+    }
+    .parent>span{
+      display: block;
+      height:20px;
+      font-size:14px;
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部 -->
+  <div class="header">
+    <img src="  image/logo.png" alt="">
+    <span>用户注册</span>
+    <p>已有诺心账号?<a href="http://localhost:8080/login.html">请登录</a></p>
+  </div>
+  <!-- banner大图片 -->
+  <div class="banner">
+    <div class="img_1"</div>
+      <!-- 注册框 -->
+      <div class="reg"> 
+        <h3>用户注册</h3>
+        <form class="form" action="">
+          <div class="parent">
+            <img src="  image/phone.png" alt="">
+            <input id="uname" type="text" placeholder="请输入账号">
+            <span id="uname-msg">&nbsp;</span>
+          </div>
+          <div class="parent">
+            <img src="  image/mima.png" alt="">
+            <input id="upwd" type="password" placeholder="请输入密码">
+            <span id="upwd-msg">&nbsp;</span>
+          </div>
+          <div class="parent">
+            <img src="  image/phone.png" alt="">
+            <input id="phone" type="text" placeholder="请输入手机号">
+            <span id="phone-msg">&nbsp;</span>
+          </div>
+          <button id="button">提交注册</button>
+        </form>
+        <input id="pdd" type="checkbox">
+        <label for="pdd">我已阅读并同意<a>《诺心用户服务协议》</a></label>
+      </div>
+    </div>
+  </div>
+  <script src="  js/jquery-1.11.3.js"></script>
+  <script src="  js/reg.js"></script>
+  <div id="footer"></div>
+  <script>
+    $.ajax({
+    url:"http://localhost:8080/footer.html",
+    type:"get",
+    success:function(result){
+      $('#footer').replaceWith(result)
+    }
+  })
+  </script>
+</body>
+</html>
